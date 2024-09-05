@@ -48,20 +48,20 @@ function Menu(){
         
         <nav className='flex justify-center items-center space-x-4'>
           <Link href="/" className="hover:text-purple-700 dark:hover:text-purple-400 transition-colors">Inicio</Link>
+          <Link href="/registrar" className="hover:text-purple-700 dark:hover:text-purple-400 transition-colors">Registrar</Link>
           <Link href="/buscar" className="hover:text-purple-700 dark:hover:text-purple-400 transition-colors">Buscar</Link>
-          <Link href="/encontrar" className="hover:text-purple-700 dark:hover:text-purple-400 transition-colors">Encontrar</Link>
-          <Link href="/darenadopcion" className="hover:text-purple-700 dark:hover:text-purple-400 transition-colors">Dar en adopción</Link>
+          <Link href="/darenadopcion" className="hover:text-purple-700 dark:hover:text-purple-400 transition-colors">Dar</Link>
           <Link href="/adoptar" className="hover:text-purple-700 dark:hover:text-purple-400 transition-colors">Adoptar</Link>
         </nav>
       </div>
 
       <Route path="/">
-        <h1 className="text-center mt-8 mb-12 mx-auto max-w-2xl text-xl">Este sitio web brinda un espacio exclusivo para la publicación de valiosa información acerca de mascotas disponibles para buscar, encontrar, dar en adopción y adoptar.</h1>      
+        <h1 className="text-center mt-8 mb-0 mx-auto max-w-2xl text-xl">Este sitio web brinda un espacio exclusivo para la publicación de valiosa información acerca de mascotas disponibles para buscar, encontrar, dar en adopción y adoptar.</h1>      
         <img src={perro} className='xs:w-full md:w-3/4 lg:w-1/2  mx-auto rounded '  />
       </Route>
 
-      <Route path="/buscar">
-        <h1 className="text-center text-3xl mt-8 mb-4">Buscar</h1>   
+      <Route path="/registrar">
+        <h1 className="text-center text-3xl mt-8 mb-4">Registrar</h1>   
         <form onSubmit='' className="sombra  pb-8  shadow-lg max-w-md mx-auto mt-8 p-6 bg-white dark:bg-gray-800 rounded-lg shadow-md">
           {/* Form fields... */}
           <div className="mb-4">
@@ -113,8 +113,8 @@ function Menu(){
         </form>     
       </Route>
 
-      <Route path="/encontrar">
-        <h1 className="text-center text-3xl mt-8 mb-4">Encontrar</h1>        
+      <Route path="/buscar">
+        <h1 className="text-center text-3xl mt-8 mb-4">Buscar</h1>        
       </Route>
       <Route path="/darenadopcion">
         <h1 className="text-center text-3xl mt-8 mb-4">Dar en Adopción</h1>        

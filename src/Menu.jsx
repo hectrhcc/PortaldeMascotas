@@ -44,14 +44,14 @@ function Menu(){
             <div className="w-5 h-5 bg-white rounded-full peer-checked:translate-x-7 transition-all"></div>
           </label>
         </div>
-        <h1 className='text-5xl font-bold text-center mb-8'>Portal Mascotas </h1>
+        <h1 className='lg:text-7xl xs:text-5xl md:text-6xl font-bold text-center mb-8'>Portal Mascotas </h1>
         
-        <nav className='flex justify-center items-center space-x-4'>
-          <Link href="/" className="hover:text-purple-700 dark:hover:text-purple-400 transition-colors">Inicio</Link>
-          <Link href="/registrar" className="hover:text-purple-700 dark:hover:text-purple-400 transition-colors">Registrar</Link>
-          <Link href="/buscar" className="hover:text-purple-700 dark:hover:text-purple-400 transition-colors">Buscar</Link>
-          <Link href="/darenadopcion" className="hover:text-purple-700 dark:hover:text-purple-400 transition-colors">Dar</Link>
-          <Link href="/adoptar" className="hover:text-purple-700 dark:hover:text-purple-400 transition-colors">Adoptar</Link>
+        <nav className='flex justify-center items-center space-x-4 mb-2'>
+          <Link href="/" className="lg:text-2xl md:text-xl hover:text-purple-700 dark:hover:text-purple-400 transition-colors">Inicio</Link>
+          <Link href="/registrar" className="lg:text-2xl md:text-xl hover:text-purple-700 dark:hover:text-purple-400 transition-colors">Registrar</Link>
+          <Link href="/buscar" className="lg:text-2xl md:text-xl hover:text-purple-700 dark:hover:text-purple-400 transition-colors">Buscar</Link>
+          <Link href="/darenadopcion" className="lg:text-2xl md:text-xl hover:text-purple-700 dark:hover:text-purple-400 transition-colors">Dar</Link>
+          <Link href="/adoptar" className="lg:text-2xl md:text-xl hover:text-purple-700 dark:hover:text-purple-400 transition-colors">Adoptar</Link>
         </nav>
       </div>
 

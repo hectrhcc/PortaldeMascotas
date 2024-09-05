@@ -174,8 +174,8 @@ function Menu(){
       <Route path="/buscar">
         <h1 className="text-center text-3xl mt-8 mb-4">Buscar</h1>  
         <hr/><br/>
-        <div className='flex justify-center items-center flex-direction-row '>
-          <div className='mb-2 mr-40'>
+        <div className='flex justify-center items-center flex-direction-row xs:flex-direction-col'>
+          <div className='mb-2 mr-40 md:mr-20'>
           <label htmlFor="raza" className="block text-gray-700 text-sm font-bold ">Raza</label>
           <select name="miSeleccion">
             <option value="" selected>- Seleccione una opción -  </option>
@@ -184,7 +184,7 @@ function Menu(){
             <option value="raza3">raza 3</option>
           </select>
           </div>
-          <div className='mb-2 mr-40'>
+          <div className='mb-2 mr-40 md:mr-20'>
           <label htmlFor="tamaño" className="block text-gray-700 text-sm font-bold">Tamaño</label>
           <select name="miSeleccion">
           <option value="" selected>- Seleccione una opción -  </option>

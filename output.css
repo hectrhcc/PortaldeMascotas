@@ -603,10 +603,6 @@ video {
   margin-left: 2rem;
 }
 
-.mr-12 {
-  margin-right: 3rem;
-}
-
 .mr-2 {
   margin-right: 0.5rem;
 }
@@ -619,8 +615,8 @@ video {
   margin-right: 1rem;
 }
 
-.mr-8 {
-  margin-right: 2rem;
+.mr-40 {
+  margin-right: 10rem;
 }
 
 .mt-14 {
@@ -633,14 +629,6 @@ video {
 
 .mt-8 {
   margin-top: 2rem;
-}
-
-.mr-20 {
-  margin-right: 5rem;
-}
-
-.mr-40 {
-  margin-right: 10rem;
 }
 
 .block {
@@ -986,6 +974,10 @@ video {
 }
 
 @media (min-width: 768px) {
+  .md\:mr-20 {
+    margin-right: 5rem;
+  }
+
   .md\:w-3\/4 {
     width: 75%;
   }

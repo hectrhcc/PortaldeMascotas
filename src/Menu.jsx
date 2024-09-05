@@ -38,8 +38,8 @@ function Menu(){
     <div className="min-h-screen bg-gray-100 dark:bg-gray-900 text-gray-900 dark:text-white transition-colors duration-300">
       <div className='navbar p-4'>
         <div className="flex items-center justify-end mb-4">
-          <p className="text-gray-700 dark:text-gray-300 font-bold mr-2">Dark mode</p>
-          <label htmlFor="darkmode" className="bg-gray-300 dark:bg-gray-600 w-14 h-7 rounded-full cursor-pointer p-1 relative">
+          <p className="xs:text-xs md:text-lg text-gray-700 dark:text-gray-300 font-bold mr-2">Dark mode</p>
+          <label htmlFor="darkmode" className=" bg-gray-300 dark:bg-gray-600 w-14 h-7 rounded-full cursor-pointer p-1 relative">
             <input onClick={handleClick} type="checkbox" id="darkmode" className="sr-only peer" checked={darkMode} readOnly />
             <div className="w-5 h-5 bg-white rounded-full peer-checked:translate-x-7 transition-all"></div>
           </label>
@@ -56,8 +56,8 @@ function Menu(){
       </div>
 
       <Route path="/">
-        <h1 className="text-center mt-8 mb-0 mx-auto max-w-2xl text-xl">Este sitio web brinda un espacio exclusivo para la publicación de valiosa información acerca de mascotas disponibles para buscar, encontrar, dar en adopción y adoptar.</h1>      
-        <img src={perro} className='xs:w-full md:w-3/4 lg:w-1/2  mx-auto rounded '  />
+        <h1 className="xs:p-2 text-center mt-8 mx-auto max-w-2xl text-xl">Este sitio web brinda un espacio exclusivo para la publicación de valiosa información acerca de mascotas disponibles para buscar, encontrar, dar en adopción y adoptar.</h1>      
+        <img src={perro} className='relative lg:top-[-3rem] xs:w-full md:w-3/4 lg:w-1/2  mx-auto rounded '  />
       </Route>
 
       <Route path="/registrar">

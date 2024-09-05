@@ -56,10 +56,11 @@ function Menu(){
       </div>
 
       <Route path="/">
-        <h1 className="xs:p-2 text-center mt-8 mx-auto max-w-2xl text-xl">Este sitio web brinda un espacio exclusivo para la publicación de valiosa información acerca de mascotas disponibles para buscar, encontrar, dar en adopción y adoptar.</h1>      
+        <h3 className=" xs:p-3 text-gray-500 text-center mt-8 mx-auto max-w-2xl text-xl lg:text-2xl xs:text-base  md:text-xl">Este sitio web brinda un espacio exclusivo para la publicación de valiosa información acerca de mascotas perdidas. </h3>      
         <img src={perro} className='relative lg:top-[-3rem] xs:w-full md:w-3/4 lg:w-1/2  mx-auto rounded '  />
+        <h3 className="relative top-[-3rem] xs:text-xs lg:top-[-6rem] text-gray-500 xs:p-4 md:text-lg xs:pb-4 text-center pb-4 mx-auto max-w-xl lg:text-xl lg:pb-8 "> Para contribuir de manera efectiva a la concientización y promoción de la tenencia responsable de animales puedes registrar tu mascota, adoptar y dar en adopción.</h3>
       </Route>
-
+      
       <Route path="/registrar">
         <h1 className="text-center text-3xl mt-8 mb-4">Registrar</h1>   
         <form onSubmit='' className="sombra  pb-8  shadow-lg max-w-md mx-auto mt-8 p-6 bg-white dark:bg-gray-800 rounded-lg shadow-md">

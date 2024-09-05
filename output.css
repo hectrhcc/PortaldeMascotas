@@ -570,6 +570,10 @@ video {
   position: relative;
 }
 
+.top-\[-3rem\] {
+  top: -3rem;
+}
+
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -669,6 +673,10 @@ video {
 
 .max-w-md {
   max-width: 28rem;
+}
+
+.max-w-xl {
+  max-width: 36rem;
 }
 
 .cursor-pointer {
@@ -782,6 +790,10 @@ video {
   padding-top: 1rem;
 }
 
+.pb-4 {
+  padding-bottom: 1rem;
+}
+
 .text-left {
   text-align: left;
 }
@@ -815,6 +827,11 @@ video {
   line-height: 1.75rem;
 }
 
+.text-base {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
 .font-bold {
   font-weight: 700;
 }
@@ -836,6 +853,11 @@ video {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.text-gray-500 {
+  --tw-text-opacity: 1;
+  color: rgb(107 114 128 / var(--tw-text-opacity));
 }
 
 .underline {
@@ -921,12 +943,36 @@ video {
 }
 
 @media (min-width: 375px) {
+  .xs\:mb-2 {
+    margin-bottom: 0.5rem;
+  }
+
+  .xs\:mb-4 {
+    margin-bottom: 1rem;
+  }
+
   .xs\:w-full {
     width: 100%;
   }
 
   .xs\:p-2 {
     padding: 0.5rem;
+  }
+
+  .xs\:p-4 {
+    padding: 1rem;
+  }
+
+  .xs\:p-3 {
+    padding: 0.75rem;
+  }
+
+  .xs\:pb-4 {
+    padding-bottom: 1rem;
+  }
+
+  .xs\:text-center {
+    text-align: center;
   }
 
   .xs\:text-xs {
@@ -942,6 +988,11 @@ video {
   .xs\:text-6xl {
     font-size: 3.75rem;
     line-height: 1;
+  }
+
+  .xs\:text-base {
+    font-size: 1rem;
+    line-height: 1.5rem;
   }
 }
 
@@ -974,6 +1025,11 @@ video {
     font-size: 1.25rem;
     line-height: 1.75rem;
   }
+
+  .md\:text-base {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -981,8 +1037,28 @@ video {
     top: -3rem;
   }
 
+  .lg\:top-\[-6rem\] {
+    top: -6rem;
+  }
+
+  .lg\:mb-2 {
+    margin-bottom: 0.5rem;
+  }
+
+  .lg\:mb-4 {
+    margin-bottom: 1rem;
+  }
+
   .lg\:w-1\/2 {
     width: 50%;
+  }
+
+  .lg\:pb-4 {
+    padding-bottom: 1rem;
+  }
+
+  .lg\:pb-8 {
+    padding-bottom: 2rem;
   }
 
   .lg\:text-5xl {
@@ -1008,5 +1084,15 @@ video {
   .lg\:text-2xl {
     font-size: 1.5rem;
     line-height: 2rem;
+  }
+
+  .lg\:text-base {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+  .lg\:text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
   }
 }

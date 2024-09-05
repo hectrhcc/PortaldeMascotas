@@ -17,7 +17,7 @@ export default {
       sm: '640px',
       md: '768px',
       lg: '1024px',
-      xs: '375px', // Ajusta este valor según tus necesidades
+      xs: '375px', 
     },
   },
   plugins: [],

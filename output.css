@@ -941,6 +941,10 @@ video {
 }
 
 @media (min-width: 375px) {
+  .xs\:block {
+    display: block;
+  }
+
   .xs\:w-full {
     width: 100%;
   }

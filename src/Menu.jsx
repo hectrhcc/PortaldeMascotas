@@ -2,7 +2,7 @@
 import React from 'react';
 import { useState, useEffect } from "react"
 import { Route, Link } from 'wouter';
-import perro from '../images/perro.jpg'
+import perro from '../images/perro.png'
 import { initializeApp } from 'firebase/app';
 import { getDatabase, ref as dbRef, push, set } from 'firebase/database';
 import { getStorage, ref as storageRef, uploadBytes, getDownloadURL } from 'firebase/storage';
@@ -44,7 +44,7 @@ function Menu(){
             <div className="w-5 h-5 bg-white rounded-full peer-checked:translate-x-7 transition-all"></div>
           </label>
         </div>
-        <h1 className='text-5xl font-bold text-center mb-8'>Portal Mascotas 🐶</h1>
+        <h1 className='text-5xl font-bold text-center mb-8'>Portal Mascotas </h1>
         
         <nav className='flex justify-center items-center space-x-4'>
           <Link href="/" className="hover:text-purple-700 dark:hover:text-purple-400 transition-colors">Inicio</Link>

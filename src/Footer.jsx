@@ -7,7 +7,7 @@ function Footer() {
   return (
     <footer className="flex justify-center items-center flex-direction-row p-4" >
       <div className=" ">
-        <span className='text-5xl pt-4  '>🐶</span>
+        <span className='text-5xl pt-4 mr-28  '>🐕</span>
         <div  className="flex text-left mt-4 ml-10 w-2/3">Espacio dedicado para encontrar, regalar y adoptar a mascotas.</div>
         <div className="flex text-left mt-4 ml-10 w-2/3">hola@portalmascotas.com</div>
       </div>

@@ -4,7 +4,7 @@ import { useState, useEffect } from "react"
 import { Route, Link } from 'wouter'
 import perro from '../images/perro.png'
 import { initializeApp } from 'firebase/app';
-import { getFirestore, collection, getDocs } from 'firebase/firestore/lite';
+import { getFirestore, collection, addDoc } from 'firebase/firestore/lite';
 
 
 // Firebase configuration...

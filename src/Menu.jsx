@@ -24,7 +24,7 @@ function Menu(){
   }, [darkMode])
 
   return (
-    <div className="min-h-screen bg-white dark:bg-gray-900 text-gray-900 dark:text-white transition-colors duration-300">
+    <div className="min-h-screen bg-gray-100 dark:bg-gray-900 text-gray-900 dark:text-white transition-colors duration-300">
       <div className='navbar p-4'>
         <div className="flex items-center justify-end mb-4">
           <p className="text-gray-700 dark:text-gray-300 font-bold mr-2">Dark mode</p>
@@ -36,11 +36,11 @@ function Menu(){
         <h1 className='text-5xl font-bold text-center mb-8'>Portal Mascotas 🐶</h1>
         
         <nav className='flex justify-center items-center space-x-4'>
-          <Link href="/" className="hover:text-blue-500 dark:hover:text-blue-400 transition-colors">Inicio</Link>
-          <Link href="/buscar" className="hover:text-blue-500 dark:hover:text-blue-400 transition-colors">Buscar</Link>
-          <Link href="/encontrar" className="hover:text-blue-500 dark:hover:text-blue-400 transition-colors">Encontrar</Link>
-          <Link href="/darenadopcion" className="hover:text-blue-500 dark:hover:text-blue-400 transition-colors">Dar en adopción</Link>
-          <Link href="/adoptar" className="hover:text-blue-500 dark:hover:text-blue-400 transition-colors">Adoptar</Link>
+          <Link href="/" className="hover:text-purple-700 dark:hover:text-purple-400 transition-colors">Inicio</Link>
+          <Link href="/buscar" className="hover:text-purple-700 dark:hover:text-purple-400 transition-colors">Buscar</Link>
+          <Link href="/encontrar" className="hover:text-purple-700 dark:hover:text-purple-400 transition-colors">Encontrar</Link>
+          <Link href="/darenadopcion" className="hover:text-purple-700 dark:hover:text-purple-400 transition-colors">Dar en adopción</Link>
+          <Link href="/adoptar" className="hover:text-purple-700 dark:hover:text-purple-400 transition-colors">Adoptar</Link>
         </nav>
       </div>
 
@@ -50,7 +50,7 @@ function Menu(){
 
       <Route path="/buscar">
         <h1 className="text-center text-3xl mt-8 mb-4">Buscar</h1>   
-        <form onSubmit='' className="max-w-md mx-auto mt-8 p-6 bg-white dark:bg-gray-800 rounded-lg shadow-md">
+        <form onSubmit='' className=" pb-8  shadow-lg max-w-md mx-auto mt-8 p-6 bg-white dark:bg-gray-800 rounded-lg shadow-md">
           {/* Form fields... */}
           <div className="mb-4">
             <label htmlFor="nombre" className="block text-gray-700 text-sm font-bold mb-2">Nombre:</label>

@@ -4,7 +4,8 @@ import { useState, useEffect } from "react"
 import { Route, Link } from 'wouter'
 import perro from '../images/perro.png'
 import { initializeApp } from 'firebase/app';
-import { getFirestore, collection, addDoc } from 'firebase/firestore/lite';
+import { getFirestore, collection, addDoc , getDocs , query } from 'firebase/firestore/lite';
+
 
 
 // Firebase configuration...
@@ -62,6 +63,21 @@ function Menu(){
   };
 
   const [darkMode, setDarkMode] = useState(false)
+  const [datos, setDatos] = useState([]);
+
+  useEffect(() => {
+    const getDatos = async () => {
+      const q = query(collection(db, "peludos")); // Crea una consulta
+      try {
+        const querySnapshot = await getDocs(q);
+        const datosArray = querySnapshot.docs.map((doc) => ({ ...doc.data(), id: doc.id }));
+        setDatos(datosArray);
+      } catch (error) {
+        console.error("Error al obtener datos:", error);
+      }
+    };
+    getDatos();
+  }, []);
 
   const handleClick = () => {
     setDarkMode(!darkMode)
@@ -156,7 +172,21 @@ function Menu(){
       </Route>
 
       <Route path="/buscar">
-        <h1 className="text-center text-3xl mt-8 mb-4">Buscar</h1>        
+        <h1 className="text-center text-3xl mt-8 mb-4">Buscar</h1>    
+        
+        <div >
+              {datos.map((dato) => (
+          <div key={dato.id} className='mt-4 pb-2 text-center'>
+            <p >Nombre: {dato.nombre}</p>
+            <p >Raza: {dato.raza}</p>
+            <p>Tamaño: {dato.tamaño}</p>
+            <p>Microchip: {dato.microchip}</p>
+            <p>Marcas: {dato.marcas}</p>
+            <p>Fecha de pérdida: {dato.fecha_de_perdida}</p>
+            <p>Descripción: {dato.descripcion}</p>
+        </div>
+      ))}
+    </div>
       </Route>
       <Route path="/darenadopcion">
         <h1 className="text-center text-3xl mt-8 mb-4">Dar en Adopción</h1>        

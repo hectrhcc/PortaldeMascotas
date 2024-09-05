@@ -2,12 +2,23 @@
 import React from 'react';
 import { useState, useEffect } from "react"
 import { Route, Link } from 'wouter';
+import perro from '../images/perro.jpg'
 import { initializeApp } from 'firebase/app';
 import { getDatabase, ref as dbRef, push, set } from 'firebase/database';
 import { getStorage, ref as storageRef, uploadBytes, getDownloadURL } from 'firebase/storage';
 
 // Firebase configuration...
+const firebaseConfig = {
+  apiKey: "AIzaSyBELDPDQP7qLlIOB9XANhcU-7Ur7-U_x-8",
+  authDomain: "mascotas-8f711.firebaseapp.com",
+  projectId: "mascotas-8f711",
+  storageBucket: "mascotas-8f711.appspot.com",
+  messagingSenderId: "209912647562",
+  appId: "1:209912647562:web:d2f038c303b4304ae04273"
+};
 
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
 function Menu(){
   const [darkMode, setDarkMode] = useState(false)
 
@@ -45,12 +56,13 @@ function Menu(){
       </div>
 
       <Route path="/">
-        <h1 className="text-center mt-8 mb-12 mx-auto max-w-2xl text-xl">Este sitio web brinda un espacio exclusivo para la publicación de valiosa información acerca de mascotas disponibles para buscar, encontrar, dar en adopción y adoptar.</h1>        
+        <h1 className="text-center mt-8 mb-12 mx-auto max-w-2xl text-xl">Este sitio web brinda un espacio exclusivo para la publicación de valiosa información acerca de mascotas disponibles para buscar, encontrar, dar en adopción y adoptar.</h1>      
+        <img src={perro} className='xs:w-full md:w-3/4 lg:w-1/2  mx-auto rounded '  />
       </Route>
 
       <Route path="/buscar">
         <h1 className="text-center text-3xl mt-8 mb-4">Buscar</h1>   
-        <form onSubmit='' className=" pb-8  shadow-lg max-w-md mx-auto mt-8 p-6 bg-white dark:bg-gray-800 rounded-lg shadow-md">
+        <form onSubmit='' className="sombra  pb-8  shadow-lg max-w-md mx-auto mt-8 p-6 bg-white dark:bg-gray-800 rounded-lg shadow-md">
           {/* Form fields... */}
           <div className="mb-4">
             <label htmlFor="nombre" className="block text-gray-700 text-sm font-bold mb-2">Nombre:</label>

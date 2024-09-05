@@ -174,9 +174,9 @@ function Menu(){
       <Route path="/buscar">
         <h1 className="text-center text-3xl mt-8 mb-4">Buscar</h1>  
         <hr/><br/>
-        <div className='flex justify-center items-center md:flex-direction-row lg:flex-direction-row xs:block'>
-          <div className='mb-2 mr-40 md:mr-20'>
-          <label htmlFor="raza" className="block text-gray-700 text-sm font-bold ">Raza</label>
+        <div className='flex justify-center items-center flex-direction-row xs:block xs:text-center xs:m-2 md:flex lg:flex '>
+          <div className='mb-2 xs:mr-0 xs:mb-8 mr-40 md:mr-20'>
+          <label htmlFor="raza" className="block text-gray-700 text-sm font-bold xs:mx-auto">Raza</label>
           <select name="miSeleccion">
             <option value="" selected>- Seleccione una opción -  </option>
             <option value="raza1">raza 1</option>
@@ -184,7 +184,7 @@ function Menu(){
             <option value="raza3">raza 3</option>
           </select>
           </div>
-          <div className='mb-2 mr-40 md:mr-20'>
+          <div className='mb-2 xs:mr-0 xs:mb-8 mr-40 md:mr-20'>
           <label htmlFor="tamaño" className="block text-gray-700 text-sm font-bold">Tamaño</label>
           <select name="miSeleccion">
           <option value="" selected>- Seleccione una opción -  </option>
@@ -193,7 +193,7 @@ function Menu(){
             <option value="grande">grande</option>
           </select>  
           </div>
-          <button type="button" className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">
+          <button type="button" className="xs:mb-8 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">
               Buscar
             </button>
           </div>  

@@ -172,7 +172,28 @@ function Menu(){
       </Route>
 
       <Route path="/buscar">
-        <h1 className="text-center text-3xl mt-8 mb-4">Buscar</h1>    
+        <h1 className="text-center text-3xl mt-8 mb-4">Buscar</h1>  
+        <div className='flex justify-center items-center flex-direction-row '>
+          <div className='mb-2 mr-40'>
+          <label htmlFor="raza" className="block text-gray-700 text-sm font-bold ">Raza</label>
+          <select name="miSeleccion">
+            <option value="raza1">raza 1</option>
+            <option value="raza2">raza 2</option>
+            <option value="raza3">raza 3</option>
+          </select>
+          </div>
+          <div className='mb-2 mr-40'>
+          <label htmlFor="tamaño" className="block text-gray-700 text-sm font-bold">Tamaño</label>
+          <select name="miSeleccion">
+            <option value="pequeño">pequeño</option>
+            <option value="mediano">mediano</option>
+            <option value="grande">grande</option>
+          </select>  
+          </div>
+          <button type="button" className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">
+              Buscar
+            </button>
+          </div>  
         
         <div >
               {datos.map((dato) => (
